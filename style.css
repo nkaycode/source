@@ -1,0 +1,66 @@
+/*Also learn how to use specificity, Firstly you need to know how to style, you need to take note of the tag you were using to style. Some conflicted with others, */
+
+/*Also on measurements you had issues there, not knowing if to use px, rem and % kindly take note of this*/
+
+/*Also on your colors, let me say you did well, but you could try color gradient online and try mixing color, though i rarely use it*/
+
+/*Also on styling others you were mixing some element together not knowing it affected the others also read more on display properties*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: gray;
+    background: linear-gradient(115deg, #b36868cc, rgba(109, 110, 194, 0.7));
+}
+
+
+
+#form-container {
+    padding: 30px;
+    background-color: rgb(138, 78, 138);
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    line-height: 2.0rem;
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.input-box {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 10px;
+    border: currentColor;
+    outline: 0;
+}
+
+#page-header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+i {
+    line-height: 2cm;
+    font-size: 18px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 0.30rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(143, 93, 190);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 40px;
+} 

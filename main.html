@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--What i do is to check how to group my cards, On this page what i notice we have three cards, learning how to group your cards properly-->
+    <div id="page-header">
+        <header>
+            <h1>KodeCamp Registration</h1>
+            <p><i>Please fill the form below to go on the KodeCamp train</i></p>
+            <!-- I separate head tag and paragraph tag from the form element card, using css on it to design will be easier as other elements won't be touching each other-->
+        </header>
+    </div>
+    <!--Group all form cards in one container, that what i do most times, group what you need to have in one div container-->
+    <form id="form-container">
+        <div class="page-body">
+            <!--What i did here is to group the form element in one div element container and also group each label and input element in one div-->
+            <div class="input-style">
+                <label for="name"><h5 style="font-size: 19px;">First Name</h5></label>
+                <input type="text" name="name" id="name" class="input-box" placeholder="Enter your first name" required>
+            </div>
+            <div class="input-style">
+                <!--Give your input tag a name so the user can see other responses on what he or she has input before-->
+                <label for><h5 style="font-size: 19px;">Last Name</h5></label>
+                <input type="text" class="input-box" name="name" placeholder="Enter your last name" required>
+            </div>
+            <div class="input-style">
+                <!--I added name to it too so user can't stress themselves too to type in email, they could automatically click an email they have typed in other form too-->
+                <label><h5 style="font-size: 19px;">Email</h5></label>
+                <input type="email" class="input-box" name="email" placeholder="Enter your email id" required>
+                <!--Required can be use to make it compulsory-->
+            </div>
+            <div class="input-style">
+                <h5 style="font-size: 19px;">Gender</h5>
+                    <input type="radio" name="gender">
+                    <label>Female</label>
+                    <br>
+            <input type="radio" name="gender"/>
+            <label>Male</label>
+        </div>
+        <div class="input-style">
+            <label for="education"><h5 style="font-size: 19px;">Educational background</h5></label>
+            <select class="input-box" >
+                <option value="enter your option">Enter your option</option>
+                <option value="ssce">SSCE</option>
+                <option value="degree">Bachelor Degree</option>
+                <option value="pgde">PGDE</option>
+                <option value="Masters degree">Masters Degree</option>
+            </select>
+        </div>
+        <div class="input-style"></div>
+            <h5 style="font-size: 19px;">Do you have a laptop?</h5>
+            <input type="radio" name="device">
+            <label class="form-select">Yes</label>
+            <br>
+            <input type="radio" name="device">
+            <label>No</label>
+        </div>
+        <div class="input-style">
+            <h5 style="font-size: 19px;">How did you hear about KodeCamp?</h5>
+            <input type="radio" name="info">
+            <label>Friends</label><br>
+            <input type="radio" name="info">
+            <label>Facebook</label><br>
+            <input type="radio" name="info">
+            <label>Twitter</label><br>
+            <input type="radio" name="info">
+            <label>School</label>
+        </div>
+        <div class="input-style">
+            <h5 style="font-size: 19px;">What track are you registering for?</h5>
+            <input type="radio" name="track">
+            <label>Frontend Development</label><br>
+            <input type="radio" name="track">
+            <label>Backend Development</label><br>
+            <input type="radio" name="track">
+            <label>Digital marketing</label><br>
+            <input type="radio" name="track">
+            <lable>Product Management</label><br>
+            <input type="radio" name="track">
+            <label>Entrepreneurship</label>
+            <br>
+            <input type="radio" name="track">
+            <label>Android</label><br>
+            <input type="radio" name="track">
+            <label>UI/UX</label><br>
+            <input type="radio" name="track">
+            <label>CAD</label><br>
+        </div>
+        <div class="input-style">
+            <h5 style="font-size: 19px;">What level are you on?</h5>
+            <input type="radio"  name="level"> 
+            <label>Beginner</label><br>
+            <input type="radio"  name="level">
+            <label>Intermediate</label><br>
+        </div>
+        <div class="input-style">
+            <label for="comment"><h5 style="font-size: 19px;">Tell Us About Yourself</h5></label>
+            <textarea name="comment" cols="25" rows="10" placeholder="Your comments..." class="input-box"></textarea>
+        </div>
+        <div class="input-style">
+            <label for="country"><h5 style="font-size: 19px;">Select Your Country</h5></label>
+            <select class="input-box">
+                <option value="enter your option"><h6>Enter your option</h6></option>
+                <option value="nigeria">Nigeria</option>
+                <option value="south africa">South Africa</option>
+                <option value="ghana">Ghana</option>
+                <option value="kenya">Kenya</option>
+                <option value="liberia">Liberia</option>
+                <option value="canada">Canada</option>
+                <option value="united lingdom">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="usa">USA</option>
+                <option value="jamaica">Jamaica</option>
+            </select>
+        </div>
+        <!--Use div element proper to group your elements properly, i noticed you grouped some elements not quite well with div elements, let say you have p tag and just an input element, group it in a div element-->
+        <div>
+            <button style="font-size: 20px;"><h5>Submit</h5></button>
+        </div>
+    </div>
+    </form>
+</body>
+<!--Take note of where i made corrections, don't copy the comments in green, I used the comments to explain easily to you-->
+</html>
